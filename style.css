@@ -14,6 +14,7 @@ body {
   background-color: #f3f0ec;
 }
 
+/* nav section */
 .container {
   padding-left: 350px;
   padding-right: 350px;
@@ -53,6 +54,8 @@ body {
 .button:hover {
   background-color: #0b1908;
 }
+
+/* hero section */
 
 .hero-container {
   display: flex;
@@ -136,4 +139,84 @@ body {
   display: flex;
   align-items: center;
   height: 75vh;
+}
+
+/*about section*/
+
+.about-container {
+  background-color: #d5ddd3;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.about-flex-container {
+  display: flex;
+  gap: 80px;
+}
+
+.about-left,
+.about-right {
+  width: 50%;
+}
+
+.about-left-img {
+  width: 100%;
+}
+
+.about-right-subheader {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 1000px;
+  display: flex;
+  gap: 10px;
+  width: 20%;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0px;
+}
+.leaf-img {
+  animation: spin 7s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.about-right-header {
+  font-size: 40px;
+  font-weight: 400;
+  padding: 15px 0px;
+}
+
+.about-right-para {
+  color: var(--primary-text-color);
+  line-height: 1.5;
+  font-size: 15px;
+  padding: 25px 0px;
+}
+
+.about-flex-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.about-info-card {
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 3px 20px;
+}
+
+.count {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.info-text {
+  color: var(--primary-text-color);
+  font-size: 14px;
+  padding-top: 8px;
 }
