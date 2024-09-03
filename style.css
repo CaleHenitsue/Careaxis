@@ -473,7 +473,7 @@ body {
 .contact-grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
+  gap: 30px;
 }
 
 .contact-container {
@@ -522,4 +522,17 @@ body {
   font-size: 19px;
   font-weight: 400;
   color: #2d4023;
+}
+
+.contact-button {
+  align-self: flex-end;
+}
+
+.icon-box {
+  width: 30px;
+  height: 30px;
+  background-color: #ebf1ea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
