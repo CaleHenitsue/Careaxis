@@ -468,3 +468,58 @@ body {
   line-height: 1.2;
   padding: 35px 30px;
 }
+
+/* contact section */
+.contact-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.contact-flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact-flex-container h1 {
+  font-size: 40px;
+  font-weight: 400;
+  color: #2d4023;
+}
+
+.contact-flex-container .button {
+  padding: 13px 16px;
+}
+
+.contact-card {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 20px;
+}
+
+.contact-card-link {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font-size: 15px;
+  color: #2d4023;
+}
+
+.contact-card-link img {
+  width: 20px;
+}
+
+.contact-card > p {
+  font-size: 19px;
+  font-weight: 400;
+  color: #2d4023;
+}
