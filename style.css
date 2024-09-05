@@ -580,7 +580,7 @@ body {
 }
 
 .article-card > p {
-  font-size: 17px;
+  font-size: 15px;
   color: #2d4023;
   font-weight: 500;
   padding: 20px 0px;
@@ -598,7 +598,7 @@ body {
 }
 
 .news-date-container > p {
-  font-size: 14px;
+  font-size: 13px;
   color: #919aa1;
 }
 
@@ -661,6 +661,7 @@ body {
 .links-column > h1 {
   font-size: 20px;
   font-weight: 400;
+  color: rgba(255, 252, 252, 0.2);
 }
 
 .links-column > ul {
