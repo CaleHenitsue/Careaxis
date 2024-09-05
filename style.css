@@ -502,8 +502,8 @@ body {
   background-color: white;
   display: flex;
   flex-direction: column;
-  gap: 25px;
-  padding: 20px;
+  padding: 35px;
+  gap: 15px;
 }
 
 .contact-card-link {
@@ -535,4 +535,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.contact-card-img-container > img {
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+.contact-card-img-container > img:hover {
+  transform: scale(1.1);
+}
+.contact-card-img-container {
+  border: 3px solid white;
+  overflow: hidden;
 }
