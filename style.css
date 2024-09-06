@@ -119,7 +119,7 @@ body {
 }
 
 .spin-icon {
-  margin-top: 140px;
+  margin-top: 90px;
 }
 
 .spin-img {
@@ -196,10 +196,10 @@ body {
   color: var(--primary-text-color);
   line-height: 1.5;
   font-size: 15px;
-  padding: 25px 0px;
+  padding: 10px 0px;
 }
 
-.about-flex-container {
+.about-card-container {
   display: flex;
   justify-content: space-between;
   margin-top: 40px;
@@ -317,14 +317,17 @@ body {
 
 .schedule-container {
   background-image: url("https://cdn.prod.website-files.com/665ac02a7adde9ec8d8acf86/665c108898305a1c15e4995c_CTA%20Image.png");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: auto;
   padding-top: 200px;
-  padding-bottom: 70px;
+  height: 65vh;
 }
 
 .schedule-box {
   background-color: white;
   padding: 40px;
-  width: 40%;
+  width: 45%;
   margin-left: 80px;
 }
 
@@ -486,6 +489,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
 .contact-flex-container h1 {
@@ -704,4 +709,231 @@ body {
   text-align: center;
   font-size: 17px;
   padding-bottom: 30px;
+}
+
+.menu-icon {
+  display: none;
+}
+
+/* media queries */
+@media (max-width: 1024px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .review-right {
+    display: none;
+  }
+  .review-center {
+    flex-basis: 40%;
+    margin-right: 20px;
+  }
+  .review-left {
+    padding-left: 20px;
+    padding-bottom: 130px;
+  }
+  .review-left-container h1 {
+    width: 40%;
+  }
+  .arrow-container {
+    display: none;
+  }
+
+  .schedule-box {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-list-container {
+    display: none;
+  }
+  .nav-button {
+    display: none;
+  }
+  .menu-icon {
+    display: block;
+  }
+  .hero-container {
+    flex-direction: column;
+  }
+  .hero-main-container {
+    height: auto;
+  }
+  .left {
+    width: 100%;
+  }
+  .right {
+    width: 100%;
+  }
+  .right-container {
+    flex-direction: column;
+  }
+  .hero-right-img {
+    width: 100%;
+  }
+  .info-card-container {
+    display: flex;
+    gap: 30px;
+  }
+  .hero-right-info {
+    width: 100%;
+  }
+  .spin-icon {
+    margin-top: 20px;
+  }
+  .hero-right-para {
+    padding-bottom: 100px;
+  }
+  .about-flex-container {
+    flex-direction: column;
+  }
+  .about-left {
+    width: 100%;
+  }
+  .about-right {
+    width: 100%;
+  }
+  .about-card-container {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .service-subheader {
+    width: 20%;
+  }
+  .service-header-container {
+    display: block;
+  }
+  .service-header {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .service-card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .schedule-box {
+    width: 80%;
+  }
+  .review-flex-container {
+    flex-direction: column;
+  }
+  .review-left {
+    width: 100%;
+    background-color: transparent;
+  }
+  .review-left-img {
+    position: static;
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+  }
+  .review-left-flex-container {
+    flex-direction: column;
+  }
+
+  .review-left-container h1 {
+    width: 100%;
+  }
+  .review-left-container .about-right-subheader {
+    width: 20%;
+  }
+  .review-center {
+    flex-basis: 100%;
+    margin-left: 20px;
+  }
+  .why-choose-grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contact-container {
+    margin-top: 60px;
+  }
+  .contact-grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .news-subheader {
+    width: 15%;
+  }
+  .news-container .service-header-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .news-container .service-button {
+    align-self: flex-start;
+  }
+
+  .news-grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer-grid-container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+  }
+  .first-column {
+    grid-column: 1 / span 4;
+  }
+}
+
+@media (max-width: 425px) {
+  .info-card-container {
+    flex-direction: column;
+  }
+  .about-right-subheader {
+    width: 35%;
+  }
+  .about-info-card {
+    width: 100%;
+  }
+  .about-container {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .service-card-container {
+    grid-template-columns: 1fr;
+  }
+  .schedule-box {
+    background-color: transparent;
+    margin-left: 0;
+    width: 100%;
+  }
+  .schedule-box p {
+    font-size: 23px;
+  }
+  .schedule-container {
+    background: #b3b9b0;
+    padding-top: 0;
+    height: 22vh;
+  }
+  .review-left-container .about-right-subheader {
+    width: 35%;
+  }
+  .review-left-img {
+    height: 500px;
+  }
+  .review-center {
+    padding: 20px;
+  }
+  .why-choose-grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .contact-grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .news-grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer-grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .first-column {
+    grid-column: 1 / span 1;
+  }
+  .hero-title {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 375px) {
+}
+
+@media (max-width: 320px) {
 }
