@@ -686,6 +686,7 @@ body {
 .social-icons {
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .social-icons > img {
@@ -873,6 +874,21 @@ body {
   }
 }
 
+@media (max-width: 430px) {
+  .service-card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .why-choose-grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .contact-grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .news-grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 @media (max-width: 425px) {
   .info-card-container {
     flex-direction: column;
@@ -904,7 +920,7 @@ body {
     height: 22vh;
   }
   .review-left-container .about-right-subheader {
-    width: 35%;
+    width: 45%;
   }
   .review-left-img {
     height: 500px;
